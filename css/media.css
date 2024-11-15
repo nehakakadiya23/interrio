@@ -1,0 +1,41 @@
+
+
+
+@media screen and (max-width: 991.98px){
+  .mob_main_menu
+  {
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color:#e4a62b;
+      color:#fff;
+      width:100%;
+      z-index: 2;
+      border-top: 1px solid #fff;
+      padding: 15px 40px;
+  }
+  .mob_submenu
+  {
+      padding-left: 20px;
+  }
+  .mob_main_menu li a
+  {
+      display: block;
+      padding: 8px;
+      font-weight: 500;
+      padding-left: 30px;
+  }
+  .mob_main_menu li::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 0px;
+  }
+  .toggle_icon{
+    color: #888;
+    background-color: #fff;
+    padding: 5px 10px;
+    margin: 30px 0;
+  }
+}
