@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interrio - Corporate Architecture and Interior Design, Responsive Html5 Template</title>
+    <style>
+        .service-bg {
+            background-image: url(assets/asset\ 30.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .breadcrumb {
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+            width: 100%;
+            float: left;
+            position: relative;
+            z-index: 1;
+        }
+
+        .breadcrumb-section-box .heading-color {
+            color: #e5ab36;
+            letter-spacing: 1px;
+            font-weight: 400;
+            font-size: 36px;
+        }
+
+        .breadcrumb-section-box {
+            width: 100%;
+            float: left;
+            position: relative;
+            padding: 100px 0;
+        }
+
+        .breadcrumb .breadcrumb li {
+            font-size: 15px;
+            text-transform: capitalize;
+        }
+
+        .breadcrumb>li+li:before {
+            color: #1a1a1a;
+            content: "/";
+            font-size: 12px;
+            padding: 0 3px 0px 5px;
+        }
+
+        .breadcrumb .heading-wa {
+            color: #1a1a1a;
+        }
+
+        .breadcrumb .head-ylw {
+            color: #e5ab36;
+        }
+
+        .service-section1 .head-box {
+            padding-bottom: 50px;
+        }
+
+        .service-section1 {
+            padding-bottom: 100px;
+        }
+
+        .service-section1 .ptop-20 {
+            margin-top: 20px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="assets/favicon.ico">
+
+    <!-- font awesome css file -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- bootstrap css file  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <!-- media query css file -->
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <!-- preloader effect -->
+    <div class="preloader">
+        <img src="assets/loader.gif" alt="">
+    </div>
+
+    <!-- top header info section start -->
+    <div id="main-header">
+        <div class="top_info">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <ul class="top-left-icon d-flex">
+                            <li><a href="#"><i class="fa-solid fa-phone"></i> +5584925214</a></li>
+                            <li><a href="#"><i class="fa-regular fa-envelope"></i> info@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <ul class="top-right-icon d-flex ">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f a-hover"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram a-hover"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter a-hover"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-pinterest-p a-hover"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- header section start -->
+
+    <header class="header">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="logo col-auto d-flex p-0">
+                    <a href="index.html"><img src="assets/asset 1.png" alt="#"></a>
+                </div>
+                <div class="col-auto p-0">
+                    <nav class="d-sm-none d-lg-block">
+                        <ul class="d-flex main_menu mb-0 p-0">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Pages</a>
+                                <ul class="sub_menu ps-0">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">FAQs With Sidebar</a></li>
+                                    <li><a href="#">FAQs Without Sidebar</a></li>
+                                    <li><a href="#">404 Error</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="service.html">Services</a></li>
+                            <li><a href="#">Projects</a>
+                                <ul class="sub_menu ps-0">
+                                    <li><a href="#">Project grid</a></li>
+                                    <li><a href="#">Project Detail Full With</a></li>
+                                    <li><a href="#">Project Detail With Sidebar</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Blog</a>
+                                <ul class="sub_menu ps-0">
+                                    <li><a href="#">Blog List With Sidebar</a></li>
+                                    <li><a href="#">Blogs Grid Sidebar</a></li>
+                                    <li><a href="#">Blogs Grid No Sidebar</a></li>
+                                    <li><a href="#" class="d-flex justify-content-between">Single Blog <span
+                                                class="sub-arrow"><i class="fa-solid fa-angle-right"></i></span></a>
+                                        <ul class="peta_menu ps-0">
+                                            <li><a href="#">With Sidebar</a></li>
+                                            <li><a href="#">Without Sidebar</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="toggle_icon d-lg-none d-md-block">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <nav>
+                        <ul class="mob_main_menu d-lg-none mb-0 p-0">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#" class="d-flex justify-content-between">Pages<i
+                                        class="fa-solid fa-angle-down me-2"></i></a>
+                                <ul class="mob_sub_menu ps-0">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">FAQs With Sidebar</a></li>
+                                    <li><a href="#">FAQs Without Sidebar</a></li>
+                                    <li><a href="#">404 Error</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#" class="d-flex justify-content-between">Projects<i
+                                        class="fa-solid fa-angle-down me-2"></i></a>
+                                <ul class="mob_sub_menu ps-0">
+                                    <li><a href="#">Project grid</a></li>
+                                    <li><a href="#">Project Detail Full With</a></li>
+                                    <li><a href="#">Project Detail With Sidebar</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="d-flex justify-content-between">Blog<i
+                                        class="fa-solid fa-angle-down me-2"></i></a>
+                                <ul class="mob_sub_menu ps-0">
+                                    <li><a href="#">Blog List With Sidebar</a></li>
+                                    <li><a href="#">Blogs Grid Sidebar</a></li>
+                                    <li><a href="#">Blogs Grid No Sidebar</a></li>
+                                    <li><a href="#" class="d-flex justify-content-between">Single Blog <span><i
+                                                    class="fa-solid fa-angle-down me-2"></i></span></a>
+                                        <ul class="mob_peta_menu ps-0">
+                                            <li><a href="#">With Sidebar</a></li>
+                                            <li><a href="#">Without Sidebar</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header section end -->
+
+    <section class="service-bg spacer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-section-box">
+                        <h1 class="heading-color">Services</h1>
+                        <ul class="breadcrumb">
+                            <li class="heading-wa"><a href="index.html">Home</a></li>
+                            <li class="head-ylw"><a href="">Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- top header info section end -->
+
+    <!-- --service-section start-- -->
+
+    <div class="service-section1">
+        <div class="col-md-12 half-height">
+            <div class="bg-image"></div>
+        </div>
+        <div class="container">
+            <div class="row d-flex spacer">
+                <div class="col-lg-12 col-sm-12 col-md-12 head-box">
+                    <h2 class="theme-title">Our service</h2>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="service-box1">
+                        <a href="" class="service-icon">
+                            <i class="fa-solid fa-road"></i>
+                        </a>
+                        <h3>
+                            <a href="" class="samll-head mar-top25 pad-bottom20">Exterior Design</a>
+                        </h3>
+                        <p>Sed do eiusmod tempor olor sit amet, consectetur a dicing elit, sed zead tempor</p>
+                        <a href="" class="service_btn">Read more</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="service-box1">
+                        <a href="" class="service-icon">
+                            <i class="fa-solid fa-paint-roller"></i>
+                        </a>
+                        <h3>
+                            <a href="">Graphic Design</a>
+                        </h3>
+                        <p>Sed do eiusmod tempor olor sit amet, consectetur a dicing elit, sed zead tempor</p>
+                        <a href="" class="service_btn">Read more</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="service-box1">
+                        <a href="" class="service-icon">
+                            <i class="fa-regular fa-building"></i>
+                        </a>
+                        <h3>
+                            <a href="">Web Design</a>
+                        </h3>
+                        <p>Sed do eiusmod tempor olor sit amet, consectetur a dicing elit, sed zead tempor</p>
+                        <a href="" class="service_btn">Read more</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 ptop-20">
+                    <div class="service-box1">
+                        <a href="" class="service-icon">
+                            <i class="fa-brands fa-renren"></i>
+                        </a>
+                        <h3>
+                            <a href="" class="samll-head mar-top25 pad-bottom20">Logo Design</a>
+                        </h3>
+                        <p>Sed do eiusmod tempor olor sit amet, consectetur a dicing elit, sed zead tempor</p>
+                        <a href="" class="service_btn">Read more</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 ptop-20">
+                    <div class="service-box1">
+                        <a href="" class="service-icon">
+                            <i class="fa-solid fa-pencil"></i>
+                        </a>
+                        <h3>
+                            <a href="">Web Design</a>
+                        </h3>
+                        <p>Sed do eiusmod tempor olor sit amet, consectetur a dicing elit, sed zead tempor</p>
+                        <a href="" class="service_btn">Read more</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 ptop-20">
+                    <div class="service-box1">
+                        <a href="" class="service-icon">
+                            <i class="fa-regular fa-images"></i>
+                        </a>
+                        <h3>
+                            <a href="">Photo Design</a>
+                        </h3>
+                        <p>Sed do eiusmod tempor olor sit amet, consectetur a dicing elit, sed zead tempor</p>
+                        <a href="" class="service_btn">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --service-section end-- -->
+
+    <!----- facts-section start------>
+
+    <div class="facts-section">
+        <div class="bg-image"></div>
+        <div class="container">
+            <div class="row pad-100" id="counters">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="facts">
+                        <span><i class="fa-solid fa-user-group"></i></span>
+                        <div class="content">
+                            <span><span class="counter" data-TargetNum="1000" data-Speed="4000">0</span></span>+
+                            <h3>Happy clients</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="facts">
+                        <span><i class="fa-regular fa-building"></i></span>
+                        <div class="content">
+                            <span><span class="counter" data-TargetNum="400" data-Speed="4000">0</span></span>+
+                            <h3>Projects done</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="facts">
+                        <span><i class="fa-solid fa-trophy"></i></span>
+                        <div class="content">
+                            <span><span class="counter" data-TargetNum="100" data-Speed="4000">0</span></span>+
+                            <h3>Awards won</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----- facts-section end------>
+
+    <!------blog post section Start------->
+    <div class="blog-section spacer">
+        <div class="container">
+            <div class="row">
+                <div class=" col-md-12 col-sm-12 col-xs-12 head-box">
+                    <h2 class="theme-title">Blog post</h2>
+                </div>
+                <div class="blog-post-box d-flex">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="hover-section">
+                            <img src="assets/asset 17.jpeg" alt="">
+                            <div class="icon-box">
+                                <ul class="icon-hover d-flex">
+                                    <li><a href=""><i class="fa-solid fa-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="post-sec">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <h3>
+                                        <a href="">Everyday carry sriracha viny</a>
+                                    </h3>
+                                    <ul class="blog-text-sec">
+                                        <li><a href="">
+                                                <span><i class="fa-solid fa-calendar-days"></i></span>April 5 2017
+                                            </a></li>
+                                        <li><a href="">
+                                                <span><i class="fa-regular fa-comment"></i></span>10 Comment
+                                            </a></li>
+                                    </ul>
+                                    <p>Offal yuccie meggings everyday carry skate board direct trade, tumblr literally
+                                        migas biodiesel vinyl banjo.</p>
+                                    <a href="" class="read-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 pad-15">
+                        <div class="hover-section">
+                            <img src="assets/asset 18.jpeg" alt="">
+                            <div class="icon-box">
+                                <ul class="icon-hover d-flex">
+                                    <li><a href=""><i class="fa-solid fa-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="post-sec">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <h3>
+                                        <a href="">Everyday carry sriracha viny</a>
+                                    </h3>
+                                    <ul class="blog-text-sec">
+                                        <li><a href="">
+                                                <span><i class="fa-solid fa-calendar-days"></i></span>April 5 2017
+                                            </a></li>
+                                        <li><a href="">
+                                                <span><i class="fa-regular fa-comment"></i></span>10 Comment
+                                            </a></li>
+                                    </ul>
+                                    <p>Offal yuccie meggings everyday carry skate board direct trade, tumblr literally
+                                        migas biodiesel vinyl banjo.</p>
+                                    <a href="" class="read-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="hover-section">
+                            <img src="assets/asset 19.jpeg" alt="">
+                            <div class="icon-box">
+                                <ul class="icon-hover d-flex">
+                                    <li><a href=""><i class="fa-solid fa-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="post-sec">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <h3>
+                                        <a href="">Everyday carry sriracha viny</a>
+                                    </h3>
+                                    <ul class="blog-text-sec">
+                                        <li><a href="">
+                                                <span><i class="fa-solid fa-calendar-days"></i></span>April 5 2017
+                                            </a></li>
+                                        <li><a href="">
+                                                <span><i class="fa-regular fa-comment"></i></span>10 Comment
+                                            </a></li>
+                                    </ul>
+                                    <p>Offal yuccie meggings everyday carry skate board direct trade, tumblr literally
+                                        migas biodiesel vinyl banjo.</p>
+                                    <a href="" class="read-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------blog post section end------->
+
+    <!------pattern section Start------->
+
+    <div class="pattern-section spacer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 head-box">
+                    <h2 class="theme-title">Partner</h2>
+                </div>
+                <div class="owl-carousel owl-theme" id="pattern">
+                    <div class="box">
+                        <img src="assets/asset 20.png" alt="">
+                    </div>
+                    <div class="box">
+                        <img src="assets/asset 20.png" alt="">
+                    </div>
+                    <div class="box">
+                        <img src="assets/asset 20.png" alt="">
+                    </div>
+                    <div class="box">
+                        <img src="assets/asset 20.png" alt="">
+                    </div>
+                    <div class="box">
+                        <img src="assets/asset 20.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------pattern section end------->
+
+    <!------NEW-letter section Start----->
+
+    <div class="news-section pad-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 sing-box">
+                    <h3>Sign in to our newsletter </h3>
+                    <p>Sign in to our newsletter and receive a ten dollars coupon</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 input-box">
+                    <div class="input-box">
+                        <input type="text" placeholder="Subscribe here">
+                        <button class="button1" type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12">
+                    <div class="new-icon">
+                        <ul class="new-box-icon d-flex">
+                            <li><span>
+                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                </span></li>
+                            <li><span>
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                </span></li>
+                            <li><span>
+                                    <a href=""><i class="fa-solid fa-wifi"></i></a>
+                                </span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------NEW-letter section end----->
+
+    <!------footer section Start------->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row pad-tb">
+                <div class="col-lg-3 col-md-6 col-sm-12 owl-ba">
+                    <div class="footer-box">
+                        <h3 class="footer-color">Company location</h3>
+                        <div class="address-box d-flex">
+                            <div class="col-lg-2 col-md-2">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="col-lg-10 col-md-10">
+                                <p class="footer-box1-text">PO Box 16122 Collins <br> Street West Victoria <br> 8007
+                                    Australia </p>
+                            </div>
+                        </div>
+                        <div class="contact-box d-flex">
+                            <div class="col-lg-2 col-md-2">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="col-lg-10 col-md-10">
+                                <p class="footer-box1-text">+61452125684 <br> +61452125684</p>
+                            </div>
+                        </div>
+                        <div class="contact-box1 d-flex">
+                            <div class="col-lg-2 col-md-2">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="col-lg-10 col-md-10">
+                                <p class="footer-box1-text">info@gmail.com info@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 owl-ba">
+                    <div class="footer-box">
+                        <h3 class="footer-color">Customer Care</h3>
+                        <div class="footer-2-box">
+                            <p class="footer-2-text1">
+                                Cosmetic shop <br>
+                                Good Town 122,Beauty Center
+                            </p>
+                            <p class="footer-2-text2">011 212 222 3499</p>
+                            <p class="footer-2-text2">012 445 887 8888</p>
+                            <p class="footer-2-text2">551 894 785 1589</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 owl-ba">
+                    <div class="footer-box">
+                        <h3 class="footer-color">Your Account</h3>
+                        <ul class="footer-3-ul">
+                            <li>
+                                <a href=""><i class="fa-solid fa-angle-right"></i>My Wishlist</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-angle-right"></i>Menu item Number</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-angle-right"></i>Menu item 4</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-angle-right"></i>Menu Item Five</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 owl-ba">
+                    <div class="footer-box">
+                        <h3 class="footer-color">our Gallery</h3>
+                        <div class="new-letter-box">
+                            <div class="footer4-box1">
+                                <a href=""><img src="assets/asset 21.png" alt=""></a>
+                            </div>
+                            <div class="footer4-box1">
+                                <a href=""><img src="assets/asset 22.png" alt=""></a>
+                            </div>
+                            <div class="footer4-box1">
+                                <a href=""><img src="assets/asset 23.png" alt=""></a>
+                            </div>
+                            <div class="footer4-box1">
+                                <a href=""><img src="assets/asset 24.png" alt=""></a>
+                            </div>
+                            <div class="footer4-box1">
+                                <a href=""><img src="assets/asset 25.png" alt=""></a>
+                            </div>
+                            <div class="footer4-box1">
+                                <a href=""><img src="assets/asset 26.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-bar">
+            <div class="container">
+                <p>Copyright 2017 All Right Reserved
+                    <span class="bottom-link"> ITGEEKS</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!------footer section end------->
+
+
+
+    <!-- bootstrap js file -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/multi-animated-counter.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+
+    <!-- custom js file -->
+    <script src="js/custom.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            //responsive header
+            $('.mob_main_menu, .mob_sub_menu, .mob_peta_menu').hide()
+
+            $('.toggle_icon').click(function () {
+                $('.mob_main_menu').slideToggle()
+                $(this).find('i').toggleClass('fa-bars fa-times');
+            })
+
+            $('.mob_main_menu li a').click(function () {
+                $(this).next('.mob_sub_menu').slideToggle();
+            })
+
+            $('.mob_sub_menu li a').click(function () {
+                $(this).next('.mob_peta_menu').slideToggle();
+            })
+        });
+
+        $(document).ready(function () {
+            $("#pattern").owlCarousel({
+                items: 4,
+                loop: true,
+                dots: true,
+                dotsEach: true,
+                center: false,
+                margin: 15,
+            })
+        });
+
+        $(document).ready(function () {
+
+            new WOW().init();
+
+            var owl = $('.owl-carousel');
+            owl.owlCarousel();
+            // Listen to owl events:
+            owl.on('changed.owl.carousel', function (event) {
+                // new WOW().init();
+            });
+        });
+
+        $(document).ready(function () {
+            // scroll to header fixed code
+            $(window).scroll(function () {
+                var h = $(window).scrollTop()
+
+                if (h > 150) {
+                    $('.header').addClass('fixed_header')
+                }
+                else {
+                    $('.header').removeClass('fixed_header')
+                }
+            })
+        })
+
+        $(document).ready(function () {
+            // scroll to header fixed code
+            $(window).scroll(function () {
+                var h = $(window).scrollTop()
+
+                if (h > 150) {
+                    $('.header').addClass('fixed_header')
+                    $('.sticky_top').fadeIn(350)
+                }
+                else {
+                    $('.header').removeClass('fixed_header')
+                    $('.sticky_top').fadeOut(350)
+                }
+            })
+        })
+
+
+        $('.sticky_top').hide()
+
+
+        // click to out top
+        $('.sticky_top').click(function () {
+            $('html,body').animate({ scrollTop: 0 }, 500);
+        })
+
+        setTimeout(() => {
+            $('.preloader').slideUp(2000)
+        }, 3000);
+
+        $(document).ready(function () {
+            new WOW().init();
+        })
+
+
+        // init Isotope
+        var $grid = $('.grids').isotope({
+            // options
+        });
+
+
+        // filter items on button click
+        $('.filter-button-group').on('click', 'span', function () {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+        });
+
+        $("a.group").attr('rel', 'gallery').fancybox({
+            'transitionIn': 'elastic',
+            'transitionOut': 'elastic',
+            'speedIn': 600,
+            'speedOut': 200,
+            'overlayShow': false
+        });
+    </script>
+</body>
+</html>

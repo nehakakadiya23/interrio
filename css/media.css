@@ -1,0 +1,156 @@
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+  /* ----top info----- */
+  .top_info {
+    background-color: #fff;
+  }
+
+
+  #banner .text_box {
+    position: absolute;
+    left: 10%;
+    width: 100%;
+    transform: translateY(30%);
+  }
+
+  #banner .text_box h1 {
+    color: #1a1a1a;
+    font-size: 21px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+  }
+
+  #banner .text_box p {
+    display: none;
+  }
+
+  /* ------about section----- */
+  .abouts-image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-box {
+    padding: 20px 0;
+  }
+
+  .about-box a {
+    padding: 2px 15px;
+    background: #1a1a1a;
+    display: inline-block;
+    font-size: 13px;
+    border: none;
+  }
+
+  /* -----mixitap section------- */
+  .mixitap-section .filtering span {
+    font-size: 16px;
+    margin-left: 0;
+    padding: 5px;
+  }
+
+  .mixitap-section .img_box img {
+    width: 737px;
+    height: auto;
+  }
+
+  /* -----banner box section----- */
+  .banner_bg h1 {
+    font-size: 21px;
+    text-align: center;
+  }
+
+  /* -----price section---- */
+  .price-section .price-box {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  /* ----testimonial slider section---- */
+  #testi .testi-box {
+    padding-top: 50px;
+  }
+
+  /* -----team section ----- */
+  .team-section .box-caption h3 {
+    padding-top: 0;
+  }
+
+  .team-section .hover-section img {
+    margin-top: 30px;
+  }
+
+  .facts-section .facts {
+    margin-bottom: 30px;
+  }
+
+  /* ----blog post section--- */
+  .blog-section .blog-post-box .hover-section {
+    margin-top: 30px;
+  }
+
+  .blog-section .blog-post-box .hover-section img {
+    width: 737px;
+    height: 734px;
+  }
+
+  /* ---pattern-section--- */
+  .pattern-section .box {
+    padding-top: 50px;
+  }
+
+  /* ---news section--- */
+  .news-section .sing-box h3 {
+    text-align: center;
+  }
+
+  .news-section .sing-box p {
+    font-size: 15px;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+}
+
+
+@media screen and (max-width: 991.98px) {
+  .mob_main_menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #e4a62b;
+    color: #fff;
+    width: 100%;
+    z-index: 2;
+    border-top: 1px solid #fff;
+    padding: 15px 40px;
+  }
+
+  .mob_submenu {
+    padding-left: 20px;
+  }
+
+  .mob_main_menu li a {
+    display: block;
+    padding: 8px;
+    font-weight: 500;
+    padding-left: 30px;
+  }
+
+  .mob_main_menu li::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 0px;
+  }
+
+  .toggle_icon {
+    color: #888;
+    background-color: #fff;
+    padding: 5px 10px;
+    margin: 30px 0;
+  }
+}
