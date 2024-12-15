@@ -1,41 +1,268 @@
+@media only screen and (max-width: 767px) {
+
+	/* ---schedule section--- */
+	.schedule .single-schedule {
+		margin: 15px 0;
+	}
+
+	.section {
+		padding: 50px 0;
+	}
+
+	.section-title {
+		margin-bottom: 30px;
+		padding: 0 20px;
+	}
+
+	.section-title h2 {
+		font-size: 22px;
+		margin-bottom: 10px;
+	}
+
+	.section-title p {
+		font-size: 13px;
+	}
+
+	/* ---fun-fact section--- */
+	.fun-facts .single-fun {
+		margin: 35px 0;
+	}
+
+	/* ---why choose section ---- */
+	.why-choose .choose-right {
+		height: 350px;
+		margin-top: 30px;
+		background-image: url(../assets/asset\ 28.jpeg);
+		background-size: cover;
+		background-position: 50%;
+		background-repeat: no-repeat;
+	}
+	/* ---call action section--- */
+	.call-action .content {
+        padding: 70px 0;
+    }
+	.call-action .content h2 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+	.call-action .content .btn{
+		padding: 11px 20px;
+		font-size: 13px;
+	}
+	/* ---service section--- */
+	.services .single-service {
+        margin: 20px 0;
+    }
+	.services .single-service h4 {
+		margin-bottom: 10px;
+	}
+	/* testimonial section */
+	.testimonial .section-title h2{
+		font-size: 22px;
+        margin-bottom: 10px;
+	}
+	/* ---price table section--- */
+	.pricing-table .btn{
+		font-size: 13px;
+	}
+	/* ----news section---- */
+	.newsletter .subscribe-text {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+	.newsletter .common-input {
+        height: 50px;
+        width: 100%;
+        margin: 0;
+    }
+	.newsletter .btn {
+        height: 50px;
+        line-height: 50px;
+        width: 100%;
+        margin: 14px 0 0;
+    }
+	/* footer section */
+	.footer .single-footer {
+        margin: 15px 0;
+    }
+	.footer .footer-top {
+        padding: 50px 0 60px;
+    }
+	.footer .single-footer h2 {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+}
 
 
 
-@media screen and (max-width: 991.98px){
-  .mob_main_menu
-  {
-      display: block;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color:#e4a62b;
-      color:#fff;
-      width:100%;
-      z-index: 2;
-      border-top: 1px solid #fff;
-      padding: 15px 40px;
-  }
-  .mob_submenu
-  {
-      padding-left: 20px;
-  }
-  .mob_main_menu li a
-  {
-      display: block;
-      padding: 8px;
-      font-weight: 500;
-      padding-left: 30px;
-  }
-  .mob_main_menu li::before{
-    position: absolute;
-    content: '';
-    width: 100%;
-    left: 0px;
-  }
-  .toggle_icon{
-    color: #888;
-    background-color: #fff;
-    padding: 5px 10px;
-    margin: 30px 0;
-  }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.schedule .schedule-inner {
+		transform: none;
+	}
+
+	.section {
+		padding: 70px 0;
+	}
+
+	.schedule {
+		background: #fff;
+		margin: 0;
+		height: auto;
+		padding: 70px 0;
+		border-bottom: 1px solid #eee;
+	}
+
+	/* ----features section----- */
+	.features {
+		padding: 70px 0;
+	}
+
+	.section-title h2 {
+		font-size: 25px;
+		margin-bottom: 12px;
+	}
+
+	.section-title {
+		margin-bottom: 35px;
+		padding: 0 80px;
+
+	}
+
+	.section-title h2 {
+		font-size: 25px;
+		margin-bottom: 12px;
+	}
+
+	.section-title p {
+		font-size: 13px;
+	}
+
+	.features .single-features {
+		text-align: center;
+		position: relative;
+		padding: 10px 155px;
+		margin: 10px 0;
+	}
+
+	/* ---fun-fact section--- */
+	.fun-facts .single-fun {
+		margin: 20px 0;
+	}
+
+	/* ---why choose section ---- */
+	.why-choose .choose-right {
+		height: 350px;
+		margin-top: 30px;
+		background-image: url(../assets/asset\ 28.jpeg);
+		background-size: cover;
+		background-position: 50%;
+		background-repeat: no-repeat;
+	}
+
+	/* ---call action section--- */
+	.call-action .content {
+		padding: 70px 0;
+	}
+
+	.call-action .content h2 {
+		font-size: 28px;
+		line-height: 40px;
+	}
+
+	.call-action .btn {
+		padding: 11px 20px;
+		font-size: 13px;
+	}
+
+	/* ---testi section--- */
+	.testimonial .section-title h2 {
+		font-size: 25px;
+		margin-bottom: 12px;
+	}
+
+	/* ---department---- */
+	.departments .department-right img {
+		height: 100%;
+		width: 100%;
+	}
+
+	/* ---blog section --- */
+	.blog .single-news {
+		margin-top: 30px;
+	}
+
+	/* appointment section-- */
+	.appointment .button .btn {
+		padding: 11px 20px;
+		font-size: 13px;
+	}
+
+	.newsletter .subscribe-text {
+		text-align: center;
+		margin-bottom: 25px;
+	}
+
+	.newsletter .subscribe-form {
+		text-align: center;
+	}
+
+	/* footer section */
+	.footer .single-footer {
+		margin: 20px 0;
+	}
+}
+
+
+
+
+
+@media screen and (max-width: 991.98px) {
+	.mob_main_menu {
+		display: block;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background-color: #fff;
+		color: #757575;
+		width: 50%;
+		padding: 24px 20px;
+		overflow-x: scroll;
+		z-index: 2;
+	}
+
+	.mob_sub_menu {
+		padding-left: 20px;
+	}
+
+	.mob_main_menu li a {
+		display: block;
+		padding: 8px;
+		font-weight: 500;
+		padding-left: 30px;
+	}
+
+	.mob_main_menu li::before {
+		position: absolute;
+		border-bottom: 1px solid #eee;
+		content: '';
+		width: 100%;
+		left: 0px;
+	}
+
+	.toggle_icon {
+		color: #1A76D1;
+		background-color: #fff;
+		padding: 5px 10px;
+		margin: 30px 0;
+	}
+
+	.get-quote {
+		display: none;
+	}
+
+	.close {
+		transform: translateX(-100%);
+	}
 }

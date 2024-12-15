@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interrio - Corporate Architecture and Interior Design, Responsive Html5 Template</title>
+    <title>Mediplus - Medical and Doctor Next.js Template.</title>
 
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- animate file -->
+    <link rel="stylesheet" href="css/animate.min.css">
 
     <!-- favicon -->
     <link rel="icon" href="assets/favicon.ico">
@@ -20,755 +23,943 @@
 
     <!-- custom css file -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
     <!-- media query css file -->
     <link rel="stylesheet" href="css/media.css">
+
+    <!-- https://mediplus-nextjs.vercel.app/ -->
 </head>
 
 <body>
+
     <!-- preloader effect -->
     <div class="preloader">
         <img src="assets/loader.gif" alt="">
     </div>
 
+    <div class="sticky_top">
+        <i class="fa-solid fa-angle-up"></i>
+    </div>
+
     <!-- top header info section start -->
-    <div id="main-header">
-        <div class="top_info">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <ul class="top-left-icon d-flex">
-                            <li><a href="#"><i class="fa-solid fa-phone"></i> +5584925214</a></li>
-                            <li><a href="#"><i class="fa-regular fa-envelope"></i> info@gmail.com</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <ul class="top-right-icon d-flex ">
-                            <li><a href="#"><i class="fa-brands fa-facebook-f a-hover"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-instagram a-hover"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-twitter a-hover"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-pinterest-p a-hover"></i></a></li>
-                        </ul>
-                    </div>
+    <div class="top_info">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-auto">
+                    <ul class="m-0 p-0 d-flex">
+                        <li><a href="#" class="me-3">About</a></li>
+                        <li><a href="#" class="me-3">Doctors</a></li>
+                        <li><a href="#" class="me-3">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-auto">
+                    <ul class="social d-flex m-0 p-0">
+                        <li class="me-4">
+                            <i class="fa fa-phone"></i>
+                            +880 1234 56789
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope"></i>
+                            <a href="#">support@yourmail.com</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-
+    <!-- top header info section end -->
     <!-- header section start -->
 
     <header class="header">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="logo col-auto d-flex p-0">
-                    <a href="index.html"><img src="assets/asset 1.png" alt="#"></a>
+                    <a href="#"><img src="assets/asset 0.svg" alt="#"></a>
                 </div>
-                <div class="col-auto p-0">
+                <div class="d-flex col-auto p-0">
                     <nav class="d-sm-none d-lg-block">
-                        <ul class="d-flex main_menu mb-0 p-0">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#pages">Pages</a>
+                        <ul class="nav-1 d-flex main_menu mb-0 p-0">
+                            <li><a href="#">Home</a>
+                            </li>
+                            <li><a href="#">Doctors<i class="p-1 fa-solid fa-angle-down"></i></a>
+                                <ul class="sub_menu ps-0">
+                                    <li><a href="#">Doctor</a></li>
+                                    <li><a href="#">Doctor Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Services<i class="p-1 fa-solid fa-angle-down"></i></a>
+                                <ul class="sub_menu ps-0">
+                                    <li><a href="#">Service</a></li>
+                                    <li><a href="#">Service Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Pages<i class="p-1 fa-solid fa-angle-down"></i></a>
                                 <ul class="sub_menu ps-0">
                                     <li><a href="#">About Us</a></li>
-                                    <li><a href="#">FAQs With Sidebar</a></li>
-                                    <li><a href="#">FAQs Without Sidebar</a></li>
+                                    <li><a href="#">Appointment</a></li>
+                                    <li><a href="#">Time Table</a></li>
+                                    <li><a href="#">Testimonials</a></li>
+                                    <li><a href="#">Our Pricing</a></li>
+                                    <li><a href="#">Sign Up</a></li>
+                                    <li><a href="#">Login</a></li>
+                                    <li><a href="#">Faq</a></li>
+                                    <li><a href="#">Mail Success</a></li>
                                     <li><a href="#">404 Error</a></li>
                                 </ul>
                             </li>
-                            <li><a href="service.html">Services</a></li>
-                            <li><a href="#project">Projects</a>
+                            <li><a href="#">Blogs<i class="p-1 fa-solid fa-angle-down"></i></a>
                                 <ul class="sub_menu ps-0">
-                                    <li><a href="#">Project grid</a></li>
-                                    <li><a href="#">Project Detail Full With</a></li>
-                                    <li><a href="#">Project Detail With Sidebar</a></li>
+                                    <li><a href="#">Blog Grid</a></li>
+                                    <li><a href="#">Blog Details</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#blog">Blog</a>
-                                <ul class="sub_menu ps-0">
-                                    <li><a href="#">Blog List With Sidebar</a></li>
-                                    <li><a href="#">Blogs Grid Sidebar</a></li>
-                                    <li><a href="#">Blogs Grid No Sidebar</a></li>
-                                    <li><a href="#" class="d-flex justify-content-between">Single Blog <span class="sub-arrow"><i
-                                                    class="fa-solid fa-angle-right"></i></span></a>
-                                        <ul class="peta_menu ps-0">
-                                            <li><a href="#">With Sidebar</a></li>
-                                            <li><a href="#">Without Sidebar</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">Contact Us</a></li>
                         </ul>
                     </nav>
 
                     <div class="toggle_icon d-lg-none d-md-block">
                         <i class="fa-solid fa-bars"></i>
                      </div>
-                     <nav>
-                        <ul class="mob_main_menu d-lg-none mb-0 p-0">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#" class="d-flex justify-content-between">Pages<i class="fa-solid fa-angle-down me-2"></i></a>
+                    <nav>
+                        <ul class="d-lg-none mob_main_menu close mb-0 p-0">
+                            <li><a href="#">Home</a>
+                            </li>
+                            <li><a href="#">Doctors<i class="p-1 fa-solid fa-angle-down"></i></a>
+                                <ul class="mob_sub_menu ps-0">
+                                    <li><a href="#">Doctor</a></li>
+                                    <li><a href="#">Doctor Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Services<i class="p-1 fa-solid fa-angle-down"></i></a>
+                                <ul class="mob_sub_menu ps-0">
+                                    <li><a href="#">Service</a></li>
+                                    <li><a href="#">Service Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Pages<i class="p-1 fa-solid fa-angle-down"></i></a>
                                 <ul class="mob_sub_menu ps-0">
                                     <li><a href="#">About Us</a></li>
-                                    <li><a href="#">FAQs With Sidebar</a></li>
-                                    <li><a href="#">FAQs Without Sidebar</a></li>
+                                    <li><a href="#">Appointment</a></li>
+                                    <li><a href="#">Time Table</a></li>
+                                    <li><a href="#">Testimonials</a></li>
+                                    <li><a href="#">Our Pricing</a></li>
+                                    <li><a href="#">Sign Up</a></li>
+                                    <li><a href="#">Login</a></li>
+                                    <li><a href="#">Faq</a></li>
+                                    <li><a href="#">Mail Success</a></li>
                                     <li><a href="#">404 Error</a></li>
                                 </ul>
                             </li>
-                            <li><a href="service.html">Services</a></li>
-                            <li><a href="#" class="d-flex justify-content-between">Projects<i class="fa-solid fa-angle-down me-2"></i></a>
+                            <li><a href="#">Blogs<i class="p-1 fa-solid fa-angle-down"></i></a>
                                 <ul class="mob_sub_menu ps-0">
-                                    <li><a href="#">Project grid</a></li>
-                                    <li><a href="#">Project Detail Full With</a></li>
-                                    <li><a href="#">Project Detail With Sidebar</a></li>
+                                    <li><a href="#">Blog Grid</a></li>
+                                    <li><a href="#">Blog Details</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#" class="d-flex justify-content-between">Blog<i class="fa-solid fa-angle-down me-2"></i></a>
-                                <ul class="mob_sub_menu ps-0">
-                                    <li><a href="#">Blog List With Sidebar</a></li>
-                                    <li><a href="#">Blogs Grid Sidebar</a></li>
-                                    <li><a href="#">Blogs Grid No Sidebar</a></li>
-                                    <li><a href="#" class="d-flex justify-content-between">Single Blog <span><i
-                                                    class="fa-solid fa-angle-down me-2"></i></span></a>
-                                        <ul class="mob_peta_menu ps-0">
-                                            <li><a href="#">With Sidebar</a></li>
-                                            <li><a href="#">Without Sidebar</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">Contact Us</a></li>
                         </ul>
                     </nav>
+                    <div class="get-quote col-auto p-0">
+                        <a href="#" class="btn btn_hover">Appointment</a>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
     <!-- header section end -->
 
-    <!-- top header info section end -->
-
-    <!-- slider section start -->
 
     <div class="owl-carousel owl-theme" id="banner">
         <div class="item">
-            <div class="img-layer">
-                <img src="assets/asset 2.jpeg" alt="">
-            </div>
-            <div class="container">
-                <div class="text_box">
-                    <h1>Creative <span>Interior</span> Designs</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque,<br>
-                        been a galley of type and scrambled it to make a type specimen </p>
-                    <button>
-                        <a href="#" class="btn">Explor now</a>
-                        <a href="#" class="btn marleft15">Contact us</a>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="img-layer">
-                <img src="assets/asset 3.jpeg" alt="">
-            </div>
+            <img src="assets/asset 24.jpeg" alt="">
             <div class="text_box">
-                <h1>Creative <span>Interior</span> Designs</h1>
+                <h1>We Provide <span>medical</span> Services <br> That You Can <span>Trust!</span></h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque,<br>
-                    been a galley of type and scrambled it to make a type specimen </p>
-                <button>
-                    <a href="#" class="btn">Explor now</a>
-                    <a href="#" class="btn marleft15">Contact us</a>
+                    faucibus libero eu, gravida quam. </p>
+                <button class="wow animate__fadeInUp" data-wow-duration="1s"> 
+                    <a href="#" class="btn btn_hover">Get Appointment</a>
+                    <a href="#" class="btn btn2 btn_hover2">Learn More</a>
                 </button>
             </div>
         </div>
         <div class="item">
-            <div class="img-layer">
-                <img src="assets/asset 4.jpeg" alt="">
-            </div>
+            <img src="assets/asset 25.jpeg" alt="">
             <div class="text_box">
-                <h1>Creative <span>Interior</span> Designs</h1>
+                <h1>We Provide <span>medical</span> Services <br> That You Can <span>Trust!</span></h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque,<br>
-                    been a galley of type and scrambled it to make a type specimen </p>
-                <button>
-                    <a href="#" class="btn">Explor now</a>
-                    <a href="#" class="btn marleft15">Contact us</a>
+                    faucibus libero eu, gravida quam. </p>
+                <button class="wow animate__fadeInUp" data-wow-duration="1s">
+                    <a href="#" class="btn btn_hover">Get Appointment</a>
+                    <a href="#" class="btn btn2 btn_hover2">About Us</a>
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="assets/asset 26.jpeg" alt="">
+            <div class="text_box">
+                <h1>We Provide <span>medical</span> Services <br> That You Can <span>Trust!</span></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque,<br>
+                    faucibus libero eu, gravida quam. </p>
+                <button class="wow animate__fadeInUp" data-wow-duration="1s">
+                    <a href="#" class="btn btn_hover">Get Appointment</a>
+                    <a href="#" class="btn btn2 btn_hover2">Contact Now</a>
                 </button>
             </div>
         </div>
     </div>
+
     <!-- slider section end -->
 
+    <!-- schedule section start -->
 
-    <!---- About section start--- -->
-    <div class="about-us spacer">
+    <div class="schedule">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-md-12 col-sm-12">
-                    <div class="abouts-image">
-                        <img src="assets/asset 5.jpeg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-7 col-md-12 col-sm-12 about-box">
-                    <h2 class="theme-title">About us</h2>
-                    <p>Lorem is a dummy text do eiusmod tempor dolor sit amet, onsectetur adip iscing elit, sed do
-                        eiusmod tempor incididunt ut labore et lorna aliqua Ut enim,sed do eiusmod
-                        tempor incididunt ut labore et lorna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation oris nisi ut aliquip ex ea
-                    </p>
-                    <p>Best theme for elit, sed do eiusmod tempor dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et lorna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation oris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                        dolo nim ad minim veni
-                    </p>
-                    <a href="" class="a-hover">Read more</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- --About section end--- -->
-
-
-    <!-- --service-section start-- -->
-
-    <div class="service-section">
-        <div class="col-md-12 half-height">
-            <div class="bg-image"></div>
-        </div>
-        <div class="container">
-            <div class="row d-flex spacer">
-                <div class="col-lg-12 col-sm-12 col-md-12 head-box">
-                    <h2 class="theme-title">Our service</h2>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="service-box1">
-                        <a href="" class="service-icon">
-                            <i class="fa-solid fa-road"></i>
-                        </a>
-                        <h3>
-                            <a href="" class="samll-head mar-top25 pad-bottom20">Exterior Design</a>
-                        </h3>
-                        <p>Sed do eiusmod tempor olor sit amet, consectetur a dicing elit, sed zead tempor</p>
-                        <a href="" class="service_btn">Read more</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="service-box1">
-                        <a href="" class="service-icon">
-                            <i class="fa-solid fa-paint-roller"></i>
-                        </a>
-                        <h3>
-                            <a href="">Graphic Design</a>
-                        </h3>
-                        <p>Sed do eiusmod tempor olor sit amet, consectetur a dicing elit, sed zead tempor</p>
-                        <a href="" class="service_btn">Read more</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="service-box1">
-                        <a href="" class="service-icon">
-                            <i class="fa-regular fa-building"></i>
-                        </a>
-                        <h3>
-                            <a href="">Web Design</a>
-                        </h3>
-                        <p>Sed do eiusmod tempor olor sit amet, consectetur a dicing elit, sed zead tempor</p>
-                        <a href="" class="service_btn">Read more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- --service-section end-- -->
-
-    <!-- mixitap section start -->
-
-    <section class="mixitap-section spacer">
-        <div class="container">
-            <div class="row d-flex">
-                <div class="col-lg-6 col-md-4 col-sm-12">
-                    <h2 class="theme-title">Our projects</h2>
-                </div>
-                <div class="row justify-content-end">
-                    <div class="col-lg-6 col-md-8 col-sm-12">
-                        <div class="filtering filter-button-group">
-                            <span data-filter="*" id="view" class="act">All</span>
-                            <span data-filter=".interior">Interior</span>
-                            <span data-filter=".exterior">Exterior</span>
-                            <span data-filter=".floor">Floor</span>
-                            <span data-filter=".industry">Industry</span>
-                            <span data-filter=".projects" class="act">View All Projects</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grids row">
-                <div class="col-lg-4 col-md-6 col-sm-12 industry projects">
-                    <div class="img_box">
-                        <img src="assets/asset 6.jpeg" alt="">
-                        <div class="layer">
-                            <div class="link d-flex">
-                                <a href=""><i class="fa-solid fa-link"></i></a>
-                                <a href="assets/asset 6.jpeg" class="group">
-                                    <i class="fa-regular fa-eye"></i>
-                                </a>
+            <div class="schedule-inner">
+                <div class="row d-flex">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="single-schedule">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i class="fa fa-ambulance"></i>
+                                </div>
+                                <div class="single-content">
+                                    <span>Lorem Amet</span>
+                                    <h4>Emergency Cases</h4>
+                                    <p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus
+                                        convallis sodales.</p>
+                                    <a href="#">LEARN MORE <i class="fa fa-long-arrow-right"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="box-caption">
-                        <h3><a href="">Lourial ipsum simply</a></h3>
-                        <p>Jan 7-2017</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 floor projects">
-                    <div class="img_box">
-                        <img src="assets/asset 7.jpeg" alt="">
-                        <div class="layer">
-                            <div class="link">
-                                <a href="" class="i-hover"><i class="fa-solid fa-link"></i></a>
-                                <a href="assets/asset 7.jpeg" class="group i-hover">
-                                    <i class="fa-regular fa-eye"></i>
-                                </a>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="single-schedule">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i class="fa-solid fa-envelope-open-text"></i>
+                                </div>
+                                <div class="single-content">
+                                    <span>Fusce Porttitor</span>
+                                    <h4>Doctors Timetable</h4>
+                                    <p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus
+                                        convallis sodales.</p>
+                                    <a href="#">LEARN MORE <i class="fa fa-long-arrow-right"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="box-caption">
-                        <h3><a href="" class="a-hover">Lourial ipsum simply</a></h3>
-                        <p>Jan 7-2017</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 interior floor projects">
-                    <div class="img_box">
-                        <img src="assets/asset 8.jpeg" alt="">
-                        <div class="layer">
-                            <div class="link">
-                                <a href="" class="i-hover"><i class="fa-solid fa-link"></i></a>
-                                <a href="assets/asset 8.jpeg" class="group i-hover">
-                                    <i class="fa-regular fa-eye"></i>
-                                </a>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="single-schedule">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i class="fa-regular fa-clock"></i>
+                                </div>
+                                <div class="single-content">
+                                    <span>Donec luctus</span>
+                                    <h4>Opening Hours</h4>
+                                    <ul class="time-sidual p-0">
+                                        <li class="day">Monday - Friday <span>8.00-20.00</span></li>
+                                        <li class="day">Saturday <span>9.00-18.30</span></li>
+                                        <li class="day">Monday - Thusday <span>9.00-15.00</span></li>
+                                    </ul>
+                                    <a href="#">LEARN MORE <i class="fa fa-long-arrow-right"></i></a>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="box-caption">
-                        <h3><a href="" class="a-hover">Lourial ipsum simply</a></h3>
-                        <p>Jan 7-2017</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 interior exterior industry projects">
-                    <div class="img_box">
-                        <img src="assets/asset 9.jpeg" alt="">
-                        <div class="layer">
-                            <div class="link">
-                                <a href="" class="i-hover"><i class="fa-solid fa-link"></i></a>
-                                <a href="assets/asset 9.jpeg" class="group i-hover">
-                                    <i class="fa-regular fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-caption">
-                        <h3><a href="" class="a-hover">Lourial ipsum simply</a></h3>
-                        <p>Jan 7-2017</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 exterior floor projects">
-                    <div class="img_box ">
-                        <img src="assets/asset 10.jpeg" alt="">
-                        <div class="layer">
-                            <div class="link">
-                                <a href="" class="i-hover"><i class="fa-solid fa-link"></i></a>
-                                <a href="assets/asset 10.jpeg" class="group i-hover">
-                                    <i class="fa-regular fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-caption">
-                        <h3><a href="" class="a-hover">Lourial ipsum simply</a></h3>
-                        <p>Jan 7-2017</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 interior exterior industry projects">
-                    <div class="img_box ">
-                        <img src="assets/asset 11.jpeg" alt="">
-                        <div class="layer">
-                            <div class="link">
-                                <a href="" class="i-hover"><i class="fa-solid fa-link"></i></a>
-                                <a href="assets/asset 11.jpeg" class="group i-hover">
-                                    <i class="fa-regular fa-eye"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-caption">
-                        <h3><a href="" class="a-hover">Lourial ipsum simply</a></h3>
-                        <p>Jan 7-2017</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- mixitap section end -->
-
-    <!------banner box section Start----------->
-
-    <div class="banner_bg spacer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-9 col-md-8 col-sm-12">
-                    <h1>We provide best interrior design</h1>
-                    <p>Offal yuccie meggings everyday carry skate board direct trade, tumblr literally migas
-                        biodiesel vinyl banjo carry
-                        skate board direct trade, tumblr literally migas biodiesel vinyl banjo.</p>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-12">
-                    <div class="banner-boxes">
-                        <div class="bg-img">
-                            <img src="assets/asset 12.jpeg" alt="">
-                            <div class="layer"></div>
-                        </div>
-                        <div class="img-text"><a href="">get quotation</a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!------banner box section end----------->
-
-    <!-------price section Start------>
-    <div class="price-section spacer">
-        <div class="container">
-            <div class="row">
-                <div class=" col-lg-12 col-md-12 col-sm-12 head-box">
-                    <h2 class="theme-title">Price table</h2>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="price-box">
-                        <div class="title-box">
-                            <h3>Basic plan</h3>
-                            <p>Lorem Ipsum is simply dummy</p>
-                        </div>
-                        <div class="month-box">
-                            <h2>$80/Month</h2>
-                        </div>
-                        <div class="paragraph-box">
-                            <p>raesent sagittis risus</p>
-                            <p>Nam molestie turpis ut rutrum</p>
-                            <p>Curabitur bibendum</p>
-                            <p>Maecenas sit amet commodo</p>
-                            <p>Ut eget orci at dolor</p>
-                        </div>
-                        <div class="price-btn">
-                            <a href="">Sing up</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="price-box">
-                        <div class="title-box">
-                            <h3>Monthly plan</h3>
-                            <p>Lorem Ipsum is simply dummy</p>
-                        </div>
-                        <div class="month-box">
-                            <h2>$90/Month</h2>
-                        </div>
-                        <div class="paragraph-box">
-                            <p>raesent sagittis risus</p>
-                            <p>Nam molestie turpis ut rutrum</p>
-                            <p>Curabitur bibendum</p>
-                            <p>Maecenas sit amet commodo</p>
-                            <p>Ut eget orci at dolor</p>
-                        </div>
-                        <div class="price-btn">
-                            <a href="">Sing up</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="price-box">
-                        <div class="title-box">
-                            <h3>Yearly plan</h3>
-                            <p>Lorem Ipsum is simply dummy</p>
-                        </div>
-                        <div class="month-box">
-                            <h2>$200/Month</h2>
-                        </div>
-                        <div class="paragraph-box">
-                            <p>raesent sagittis risus</p>
-                            <p>Nam molestie turpis ut rutrum</p>
-                            <p>Curabitur bibendum</p>
-                            <p>Maecenas sit amet commodo</p>
-                            <p>Ut eget orci at dolor</p>
-                        </div>
-                        <div class="price-btn">
-                            <a href="">Sing up</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-------price section end------>
+    <!-- schedule section end -->
 
-    <!-- ----testimonial slider start---- -->
+    <!-- Features section start -->
 
-    <div class="testi-section spacer">
+    <div class="features">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 head-box">
-                    <h2 class="theme-title">Happy Clients</h2>
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>We Are Always Ready to Help You & Your Family</h2>
+                        <img src="assets/asset 1.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <div class="single-features">
+                        <div class="single-icon">
+                            <i class="fa-solid fa-truck-medical hover"></i>
+                        </div>
+                        <h3>Emergency Help</h3>
+                        <p class="mb-0">Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="single-features">
+                        <div class="single-icon">
+                            <i class="fa-solid fa-biohazard hover"></i>
+                        </div>
+                        <h3>Enriched Pharmecy</h3>
+                        <p class="mb-0">Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="single-features">
+                        <div class="single-icon">
+                            <i class="fa-solid fa-stethoscope hover"></i>
+                        </div>
+                        <h3>Medical Treatment</h3>
+                        <p class="mb-0">Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feautes section end -->
+
+
+    <!-- fun-facts section start -->
+
+    <div class="fun-facts section overlay">
+        <div class="container">
+            <div class="row" id="counters">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-fun">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <div class="content">
+                            <span><span class="counter" data-TargetNum="3468" data-Speed="4000">0</span></span>
+                            <p>Hospital Rooms</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-fun">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="content">
+                            <span><span class="counter" data-TargetNum="557" data-Speed="4000">0</span></span>
+                            <p>Specialist Doctors</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-fun">
+                        <i class="fa-regular fa-face-smile"></i>
+                        <div class="content">
+                            <span><span class="counter" data-TargetNum="4379" data-Speed="4000">0</span></span>
+                            <p>Happy Patients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-fun">
+                        <i class="fa-solid fa-table-cells"></i>
+                        <div class="content">
+                            <span><span class="counter" data-TargetNum="32" data-Speed="4000">0</span></span>
+                            <p>Years of Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fun-facts section end -->
+
+    <!-- why-choose section start -->
+
+    <div class="why-choose section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>We Offer Different Services To Improve Your Health</h2>
+                        <img src="assets/asset 1.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="choose-left">
+                        <h3>Who We Are</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Maecenas pharetra antege vel est lobortis, a commodo magna
+                            rhoncus. In quis nisi non emet quam pharetra commodo.</p>
+                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-6 p-0">
+                                <ul class="list m-0 ps-2">
+                                    <li>
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        Maecenas vitae luctus nibh.
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        Duis massa massa.
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        Aliquam feugiat interdum.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 p-0">
+                                <ul class="list p-0">
+                                    <li>
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        Maecenas vitae luctus nibh.
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        Duis massa massa.
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        Aliquam feugiat interdum.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="choose-right">
+                        <div class="video-image">
+                            <div class="promo-video">
+                                <div class="waves-block">
+                                    <div class="waves wave-1"></div>
+                                    <div class="waves wave-2"></div>
+                                    <div class="waves wave-3"></div>
+                                </div>
+                            </div>
+                            <div class="video">
+                                <a href="#">
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- why-choose section end -->
+
+    <!-- call-action section start -->
+    <div class="call-action overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="content">
+                        <h2>Do you need Emergency Medical Care? Call @ 1234 56789</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor dictum turpis nec
+                            gravida.</p>
+                        <div class="button">
+                            <a href="#" class="btn hover">Contact Now</a>
+                            <a href="#" class="btn btn2 btn_hover2">Learn More
+                                <i class="fa fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- call-action section end -->
+
+    <!-- portfolio section start -->
+
+    <div class="portfolio section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>We Maintain Cleanliness Rules Inside Our Hospital</h2>
+                        <img src="assets/asset 1.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-carousel owl-theme" id="portfolio">
+            <div class="item">
+                <img src="assets/asset 2.jpeg" alt="">
+                <button>View Details</button>
+            </div>
+            <div class="item">
+                <img src="assets/asset 3.jpeg" alt="">
+                <button>View Details</button>
+            </div>
+            <div class="item">
+                <img src="assets/asset 4.jpeg" alt="">
+                <button>View Details</button>
+            </div>
+            <div class="item">
+                <img src="assets/asset 5.jpeg" alt="">
+                <button>View Details</button>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio section end -->
+
+    <!-- services section start -->
+    <div class="services section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>We Offer Different Services To Improve Your Health</h2>
+                        <img src="assets/asset 1.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="single-service">
+                        <i class="fa-solid fa-file-invoice"></i>
+                        <h4><a href="#">General Treatment</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut
+                            imperdiet.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="single-service">
+                        <i class="fa-solid fa-tooth"></i>
+                        <h4><a href="#">Teeth Whitening</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut
+                            imperdiet.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="single-service">
+                        <i class="fa-solid fa-heart"></i>
+                        <h4><a href="#">Heart Surgery</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut
+                            imperdiet.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="single-service">
+                        <i class="fa-solid fa-ear-deaf"></i>
+                        <h4><a href="#">Ear Treatment</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut
+                            imperdiet.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="single-service">
+                        <i class="fa-solid fa-eye"></i>
+                        <h4><a href="#">Vision Problems</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut
+                            imperdiet.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="single-service">
+                        <i class="fa-solid fa-truck-droplet"></i>
+                        <h4><a href="#">Blood Transfusion</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut
+                            imperdiet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services section end -->
+
+    <!--  testimonials section start -->
+    <div class="testimonial section overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>What Our Patients Say About Our Medical Treatments</h2>
+                        <img src="assets/asset 6.png" alt="">
+                    </div>
                 </div>
             </div>
             <div class="owl-carousel owl-theme" id="testi">
-                <div class="testi-box col-lg-4 col-md-6 col-sm-12">
-                    <img src="assets/asset 13.png" alt="">
-                    <div class="test-text-box">
-                        <h3>
-                            <a href="">Lorem Ipsum</a>
-                        </h3>
-                        <p>Everyday carry sriracha vinyl church-key man bun seitan green juice
-                            shabby chic chambray shoreditch tofu.</p>
+                <div class="box">
+                    <p>Lorem ipsum dolor sit amet consectetur eliet adipiscing. Aliquam nec suscipit turpis, vel pretium
+                        eros.</p>
+                    <h4>Ruhfayed Sakib</h4>
+                    <img src="assets/asset 9.png" alt="">
+                </div>
+                <div class="box">
+                    <p>Lorem ipsum dolor sit amet consectetur eliet adipiscing. Aliquam nec suscipit turpis, vel pretium
+                        eros.</p>
+                    <h4>Shakil Hossain</h4>
+                    <img src="assets/asset 7.png" alt="">
+                </div>
+                <div class="box">
+                    <p>Lorem ipsum dolor sit amet consectetur eliet adipiscing. Aliquam nec suscipit turpis, vel pretium
+                        eros.</p>
+                    <h4>Naimur Rahman</h4>
+                    <img src="assets/asset 8.png" alt="">
+                </div>
+                <div class="box">
+                    <p>Lorem ipsum dolor sit amet consectetur eliet adipiscing. Aliquam nec suscipit turpis, vel pretium
+                        eros.</p>
+                    <h4>Shakil Hossain</h4>
+                    <img src="assets/asset 7.png" alt="">
+                </div>
+                <div class="box">
+                    <p>Lorem ipsum dolor sit amet consectetur eliet adipiscing. Aliquam nec suscipit turpis, vel pretium
+                        eros.</p>
+                    <h4>Naimur Rahman</h4>
+                    <img src="assets/asset 8.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  testimonials section end -->
+
+    <!-- departments section start -->
+
+    <div class="departments section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>We Offer Different Departments To Diagnose Your Diseases</h2>
+                        <img src="assets/asset 1.png" alt="">
                     </div>
                 </div>
-                <div class="testi-box col-lg-4 col-md-6 col-sm-12">
-                    <img src="assets/asset 13.png" alt="">
-                    <div class="test-text-box">
-                        <h3>
-                            <a href="">Lorem Ipsum</a>
-                        </h3>
-                        <p>Everyday carry sriracha vinyl church-key man bun seitan green juice
-                            shabby chic chambray shoreditch tofu.</p>
-                    </div>
-                </div>
-                <div class="testi-box col-lg-4 col-md-6 col-sm-12">
-                    <img src="assets/asset 13.png" alt="">
-                    <div class="test-text-box">
-                        <h3>
-                            <a href="">Lorem Ipsum</a>
-                        </h3>
-                        <p>Everyday carry sriracha vinyl church-key man bun seitan green juice
-                            shabby chic chambray shoreditch tofu.</p>
-                    </div>
-                </div>
-                <div class="testi-box col-lg-4 col-md-6 col-sm-12">
-                    <img src="assets/asset 13.png" alt="">
-                    <div class="test-text-box">
-                        <h3>
-                            <a href="">Lorem Ipsum</a>
-                        </h3>
-                        <p>Everyday carry sriracha vinyl church-key man bun seitan green juice
-                            shabby chic chambray shoreditch tofu.</p>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="department-tab">
+                        <ul class="nav nav-tabs">
+                            <li class="react-tabs__tab react-tabs__tab--selected">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                                <span class="first">Cardiac Clinic</span>
+                                <span class="second">Lorem Sit</span>
+                            </li>
+                            <li class="react-tabs__tab">
+                                <i class="fa-solid fa-brain"></i>
+                                <span class="first">Neurology</span>
+                                <span class="second">Quis Est</span>
+                            </li>
+                            <li class="react-tabs__tab">
+                                <i class="fa-solid fa-tooth"></i>
+                                <span class="first">Dentistry</span>
+                                <span class="second">Sit Dolor</span>
+                            </li>
+                            <li class="react-tabs__tab">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                                <span class="first">Gastroenterology</span>
+                                <span class="second">Lorem Sit</span>
+                            </li>
+                            <li class="react-tabs__tab">
+                                <i class="fa-solid fa-bone"></i>
+                                <span class="first">Orthopedagogy</span>
+                                <span class="second">Lorem Sit</span>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <ul class="active show react-tabs__tab-panel--selected">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="department-left">
+                                            <h3>Cardiac Clinic</h3>
+                                            <p class="p1">“Vivamus ut tellus sed tellus finibus egestas. Mauris
+                                                adipiscing aliquet et nisl nec eleifend adipiscing elit.”</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                                                pharetra ante vel est lobortis, a commodo magna rhoncus. In quis nisi
+                                                non quam pharetra commodo.</p>
+                                            <ul class="list">
+                                                <li>
+                                                    <i class="fa-solid fa-check"></i>
+                                                    Maecenas vitae luctus nibh. Curabitur pharetra luctus est, sit amet
+                                                    aliquam ex posuere id.
+                                                </li>
+                                                <li>
+                                                    <i class="fa-solid fa-check"></i>
+                                                    Maecenas pharetra ante vel est lobortis.
+                                                </li>
+                                                <li>
+                                                    <i class="fa-solid fa-check"></i>
+                                                    Lorem ipsum dolor sit amet, consectetur.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="department-right">
+                                            <img src="assets/asset 10.jpeg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- ----testimonial slider end---- -->
+    <!-- departments section end -->
 
-    <!-- ----team section start------- -->
-    <div class="team-section spacer">
+    <!-- pricing-table section start -->
+
+    <div class="pricing-table section">
         <div class="container">
             <div class="row">
-                <div class=" col-md-12 col-sm-12 col-xs-12 head-box">
-                    <h2 class="theme-title">Meet our team</h2>
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>We Provide You The Best Treatment In Reasonable Price</h2>
+                        <img src="assets/asset 1.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+                    </div>
                 </div>
-                <div class="team-section-box d-flex">
-                    <div class="col-lg-4 col-md-6 col-sm-12 pad-15">
-                        <div class="hover-section">
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="single-table">
+                        <div class="table-head">
+                            <div class="icon">
+                                <i class="fa-solid fa-scissors"></i>
+                                <h4 class="title">Plastic Surgery</h4>
+                            </div>
+                            <div class="price">
+                                <div class="amount">$199
+                                    <span>/ Per Visit</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-list">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Lorem ipsum dolor sit
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Cubitur sollicitudin fentum
+                            </li>
+                            <li class="cross">
+                                <i class="fa-solid fa-xmark"></i>
+                                Nullam interdum enim
+                            </li>
+                            <li class="cross">
+                                <i class="fa-solid fa-xmark"></i>
+                                Donec ultricies metus
+                            </li>
+                            <li class="cross">
+                                <i class="fa-solid fa-xmark"></i>
+                                Pellentesque eget nibh
+                            </li>
+                        </div>
+                        <div class="table-bottom">
+                            <a href="#" class="btn btn_hover">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="single-table">
+                        <div class="table-head">
+                            <div class="icon">
+                                <i class="fa-solid fa-tooth"></i>
+                                <h4 class="title">Teeth Whitening</h4>
+                            </div>
+                            <div class="price">
+                                <div class="amount">$299
+                                    <span>/ Per Visit</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-list">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Lorem ipsum dolor sit
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Cubitur sollicitudin fentum
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Nullam interdum enim
+                            </li>
+                            <li class="cross">
+                                <i class="fa-solid fa-xmark"></i>
+                                Donec ultricies metus
+                            </li>
+                            <li class="cross">
+                                <i class="fa-solid fa-xmark"></i>
+                                Pellentesque eget nibh
+                            </li>
+                        </div>
+                        <div class="table-bottom">
+                            <a href="#" class="btn btn_hover">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="single-table">
+                        <div class="table-head">
+                            <div class="icon">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                                <h4 class="title">Heart Surgery</h4>
+                            </div>
+                            <div class="price">
+                                <div class="amount">$399
+                                    <span>/ Per Visit</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-list">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Lorem ipsum dolor sit
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Cubitur sollicitudin fentum
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Nullam interdum enim
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Donec ultricies metus
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Pellentesque eget nibh
+                            </li>
+                        </div>
+                        <div class="table-bottom">
+                            <a href="#" class="btn btn_hover">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- pricing-table section end -->
+
+    <!-- team section start -->
+
+    <div class="team section overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>We Have Specialist Doctors To Solve Your Problems</h2>
+                        <img src="assets/asset 6.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-team">
+                        <div class="t-head">
+                            <img src="assets/asset 11.jpeg" alt="">
+                        </div>
+                        <div class="t-bottom">
+                            <p>Neurosurgeon</p>
+                            <h2><a href="#">Collis Molate</a></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-team">
+                        <div class="t-head">
+                            <img src="assets/asset 12.jpeg" alt="">
+                        </div>
+                        <div class="t-bottom">
+                            <p>Neurosurgeon</p>
+                            <h2><a href="#">Domani Plavon</a></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-team">
+                        <div class="t-head">
+                            <img src="assets/asset 13.jpeg" alt="">
+                        </div>
+                        <div class="t-bottom">
+                            <p>Dental Surgeon</p>
+                            <h2><a href="#">John Mard</a></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-team">
+                        <div class="t-head">
                             <img src="assets/asset 14.jpeg" alt="">
-                            <div class="icon-box">
-                                <ul class="icon-hover d-flex">
-                                    <li><a href=""><i class="fa-solid fa-link"></i></a></li>
-                                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                </ul>
-                            </div>
                         </div>
-                        <div class="box-caption">
-                            <h3><a href="">Lourial ipsum simply</a></h3>
-                            <p>Marketing head</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 pad-15">
-                        <div class="hover-section">
-                            <div class="b_layer">
-                                <img src="assets/asset 15.jpeg" alt="">
-                            </div>
-                            <div class="icon-box">
-                                <ul class="icon-hover d-flex">
-                                    <li><a href=""><i class="fa-solid fa-link"></i></a></li>
-                                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="box-caption">
-                            <h3><a href="">Lourial ipsum simply</a></h3>
-                            <p>Founder</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 pad-15">
-                        <div class="hover-section">
-                            <div class="b_layer">
-                                <img src="assets/asset 16.jpeg" alt="">
-                            </div>
-                            <div class="icon-box">
-                                <ul class="icon-hover d-flex">
-                                    <li><a href=""><i class="fa-solid fa-link"></i></a></li>
-                                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="box-caption">
-                            <h3><a href="">Lourial ipsum simply</a></h3>
-                            <p>Sales manager</p>
+                        <div class="t-bottom">
+                            <p>Neurosurgeon</p>
+                            <h2><a href="#">Amanal Frond</a></h2>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- ----team section end------- -->
+    <!-- team section end -->
 
-    <!----- facts-section start------>
+    <!-- blog section start -->
 
-    <div class="facts-section">
-        <div class="bg-image"></div>
-        <div class="container">
-            <div class="row pad-100" id="counters">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="facts">
-                        <span><i class="fa-solid fa-user-group"></i></span>
-                        <div class="content">
-                            <span><span class="counter" data-TargetNum="1000" data-Speed="4000">0</span></span>+
-                            <h3>Happy clients</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="facts">
-                        <span><i class="fa-regular fa-building"></i></span>
-                        <div class="content">
-                            <span><span class="counter" data-TargetNum="400" data-Speed="4000">0</span></span>+
-                            <h3>Projects done</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="facts">
-                        <span><i class="fa-solid fa-trophy"></i></span>
-                        <div class="content">
-                            <span><span class="counter" data-TargetNum="100" data-Speed="4000">0</span></span>+
-                            <h3>Awards won</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!----- facts-section end------>
-
-    <!------blog post section Start------->
-    <div class="blog-section spacer">
+    <div class="blog section">
         <div class="container">
             <div class="row">
-                <div class=" col-md-12 col-sm-12 col-xs-12 head-box">
-                    <h2 class="theme-title">Blog post</h2>
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Keep up with Our Most Recent Medical News.</h2>
+                        <img src="assets/asset 1.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+                    </div>
                 </div>
-                <div class="blog-post-box d-flex">
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="hover-section">
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="single-news">
+                        <div class="news-head">
+                            <img src="assets/asset 15.jpeg" alt="">
+                        </div>
+                        <div class="news-body">
+                            <div class="news-content">
+                                <div class="date">22 Aug, 2020</div>
+                                <h2><a href="#">We have annnocuced our new product.</a></h2>
+                                <p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do
+                                    eiusmod tempor incididunt sed do incididunt sed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="single-news">
+                        <div class="news-head">
+                            <img src="assets/asset 16.jpeg" alt="">
+                        </div>
+                        <div class="news-body">
+                            <div class="news-content">
+                                <div class="date">15 Jul, 2020</div>
+                                <h2><a href="#">Top five way for solving teeth problems.</a></h2>
+                                <p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do
+                                    eiusmod tempor incididunt sed do incididunt sed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="single-news">
+                        <div class="news-head">
                             <img src="assets/asset 17.jpeg" alt="">
-                            <div class="icon-box">
-                                <ul class="icon-hover d-flex">
-                                    <li><a href=""><i class="fa-solid fa-link"></i></a></li>
-                                </ul>
-                            </div>
                         </div>
-                        <div class="post-sec">
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="row">
-                                    <h3>
-                                        <a href="">Everyday carry sriracha viny</a>
-                                    </h3>
-                                    <ul class="blog-text-sec">
-                                        <li><a href="">
-                                                <span><i class="fa-solid fa-calendar-days"></i></span>April 5 2017
-                                            </a></li>
-                                        <li><a href="">
-                                                <span><i class="fa-regular fa-comment"></i></span>10 Comment
-                                            </a></li>
-                                    </ul>
-                                    <p>Offal yuccie meggings everyday carry skate board direct trade, tumblr literally
-                                        migas biodiesel vinyl banjo.</p>
-                                    <a href="" class="read-btn">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12 pad-15">
-                        <div class="hover-section">
-                            <img src="assets/asset 18.jpeg" alt="">
-                            <div class="icon-box">
-                                <ul class="icon-hover d-flex">
-                                    <li><a href=""><i class="fa-solid fa-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="post-sec">
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="row">
-                                    <h3>
-                                        <a href="">Everyday carry sriracha viny</a>
-                                    </h3>
-                                    <ul class="blog-text-sec">
-                                        <li><a href="">
-                                                <span><i class="fa-solid fa-calendar-days"></i></span>April 5 2017
-                                            </a></li>
-                                        <li><a href="">
-                                                <span><i class="fa-regular fa-comment"></i></span>10 Comment
-                                            </a></li>
-                                    </ul>
-                                    <p>Offal yuccie meggings everyday carry skate board direct trade, tumblr literally
-                                        migas biodiesel vinyl banjo.</p>
-                                    <a href="" class="read-btn">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="hover-section">
-                            <img src="assets/asset 19.jpeg" alt="">
-                            <div class="icon-box">
-                                <ul class="icon-hover d-flex">
-                                    <li><a href=""><i class="fa-solid fa-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="post-sec">
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="row">
-                                    <h3>
-                                        <a href="">Everyday carry sriracha viny</a>
-                                    </h3>
-                                    <ul class="blog-text-sec">
-                                        <li><a href="">
-                                                <span><i class="fa-solid fa-calendar-days"></i></span>April 5 2017
-                                            </a></li>
-                                        <li><a href="">
-                                                <span><i class="fa-regular fa-comment"></i></span>10 Comment
-                                            </a></li>
-                                    </ul>
-                                    <p>Offal yuccie meggings everyday carry skate board direct trade, tumblr literally
-                                        migas biodiesel vinyl banjo.</p>
-                                    <a href="" class="read-btn">Read More</a>
-                                </div>
+                        <div class="news-body">
+                            <div class="news-content">
+                                <div class="date">05 Jan, 2020</div>
+                                <h2><a href="#">We provide highly business soliutions.</a></h2>
+                                <p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do
+                                    eiusmod tempor incididunt sed do incididunt sed.</p>
                             </div>
                         </div>
                     </div>
@@ -776,227 +967,335 @@
             </div>
         </div>
     </div>
-    <!------blog post section end------->
+    <!-- blog section end -->
 
-    <!------pattern section Start------->
+    <!-- clients section start -->
 
-    <div class="pattern-section spacer">
+    <div class="clients overlay">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 head-box">
-                    <h2 class="theme-title">Partner</h2>
-                </div>
-                <div class="owl-carousel owl-theme" id="pattern">
-                    <div class="box">
+                <div class="owl-carousel owl-theme" id="client">
+                    <div class="box1">
+                        <img src="assets/asset 18.png" alt="">
+                    </div>
+                    <div class="box1">
+                        <img src="assets/asset 19.png" alt="">
+                    </div>
+                    <div class="box1">
                         <img src="assets/asset 20.png" alt="">
                     </div>
-                    <div class="box">
-                        <img src="assets/asset 20.png" alt="">
+                    <div class="box1">
+                        <img src="assets/asset 21.png" alt="">
                     </div>
-                    <div class="box">
-                        <img src="assets/asset 20.png" alt="">
-                    </div>
-                    <div class="box">
-                        <img src="assets/asset 20.png" alt="">
-                    </div>
-                    <div class="box">
-                        <img src="assets/asset 20.png" alt="">
+                    <div class="box1">
+                        <img src="assets/asset 22.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!------pattern section end------->
+    <!-- clients section end -->
 
-    <!------NEW-letter section Start----->
 
-    <div class="news-section pad-40">
+    <!-- appointment section start -->
+
+    <div class="appointment section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 sing-box">
-                    <h3>Sign in to our newsletter </h3>
-                    <p>Sign in to our newsletter and receive a ten dollars coupon</p>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 input-box">
-                    <div class="input-box">
-                        <input type="text" placeholder="Subscribe here">
-                        <button class="button1" type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>We Are Always Ready to Help You. Book An Appointment</h2>
+                        <img src="assets/asset 1.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-12">
-                    <div class="new-icon">
-                        <ul class="new-box-icon d-flex">
-                            <li><span>
-                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                                </span></li>
-                            <li><span>
-                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                                </span></li>
-                            <li><span>
-                                    <a href=""><i class="fa-solid fa-wifi"></i></a>
-                                </span></li>
-                        </ul>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12">
+                    <form action="#" class="form">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <input type="email" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Phone">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <select aria-label="Default select example" class="form-select">
+                                        <option>Department</option>
+                                        <option value="1"> Cardiac Clinic</option>
+                                        <option value="2"> Neurology</option>
+                                        <option value="3"> Dentistry</option>
+                                        <option value="4"> Gastroenterology</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <select aria-label="Default select example" class="form-select">
+                                        <option>Doctor</option>
+                                        <option value="1"> Dr. Akther Hossain</option>
+                                        <option value="2">Dr. Dery Alex</option>
+                                        <option value="3"> Dr. Jovis Karon</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <div class="react-datepicker-wrapper">
+                                        <div class="react-datepicker__input-container">
+                                            <input type="text" class="react-datepicker-ignore-onclickoutside"
+                                                value="07/15/2024, 6:16 PM">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-12">
+                                <div class="form-group">
+                                    <textarea name="message" placeholder="Write Your Message Here....."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5 col-md-4 col-12">
+                                <div class="form-group">
+                                    <div class="button">
+                                        <button type="submit" class="btn btn_hover">Book An Appointment</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-md-8 col-12">
+                                <p>( We will be confirm by an Text Message )</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="appointment-image">
+                        <img src="assets/asset 23.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- appointment section end -->
 
-    <!------NEW-letter section end----->
-
-    <!------footer section Start------->
-    <footer class="footer-section">
+    <!-- newsletter section start -->
+    <div class="newsletter section">
         <div class="container">
-            <div class="row pad-tb">
-                <div class="col-lg-3 col-md-6 col-sm-12 owl-ba">
-                    <div class="footer-box">
-                        <h3 class="footer-color">Company location</h3>
-                        <div class="address-box d-flex">
-                            <div class="col-lg-2 col-md-2">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            <div class="col-lg-10 col-md-10">
-                                <p class="footer-box1-text">PO Box 16122 Collins <br> Street West Victoria <br> 8007
-                                    Australia </p>
-                            </div>
-                        </div>
-                        <div class="contact-box d-flex">
-                            <div class="col-lg-2 col-md-2">
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-                            <div class="col-lg-10 col-md-10">
-                                <p class="footer-box1-text">+61452125684 <br> +61452125684</p>
-                            </div>
-                        </div>
-                        <div class="contact-box1 d-flex">
-                            <div class="col-lg-2 col-md-2">
-                                <i class="fa-regular fa-envelope"></i>
-                            </div>
-                            <div class="col-lg-10 col-md-10">
-                                <p class="footer-box1-text">info@gmail.com info@gmail.com</p>
-                            </div>
-                        </div>
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="subscribe-text">
+                        <h6>Sign up for newsletter</h6>
+                        <p>Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, <br> homero alterum.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 owl-ba">
-                    <div class="footer-box">
-                        <h3 class="footer-color">Customer Care</h3>
-                        <div class="footer-2-box">
-                            <p class="footer-2-text1">
-                                Cosmetic shop <br>
-                                Good Town 122,Beauty Center
-                            </p>
-                            <p class="footer-2-text2">011 212 222 3499</p>
-                            <p class="footer-2-text2">012 445 887 8888</p>
-                            <p class="footer-2-text2">551 894 785 1589</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 owl-ba">
-                    <div class="footer-box">
-                        <h3 class="footer-color">Your Account</h3>
-                        <ul class="footer-3-ul">
-                            <li>
-                                <a href=""><i class="fa-solid fa-angle-right"></i>My Wishlist</a>
-                            </li>
-                            <li>
-                                <a href=""><i class="fa-solid fa-angle-right"></i>Menu item Number</a>
-                            </li>
-                            <li>
-                                <a href=""><i class="fa-solid fa-angle-right"></i>Menu item 4</a>
-                            </li>
-                            <li>
-                                <a href=""><i class="fa-solid fa-angle-right"></i>Menu Item Five</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 owl-ba">
-                    <div class="footer-box">
-                        <h3 class="footer-color">our Gallery</h3>
-                        <div class="new-letter-box">
-                            <div class="footer4-box1">
-                                <a href=""><img src="assets/asset 21.png" alt=""></a>
-                            </div>
-                            <div class="footer4-box1">
-                                <a href=""><img src="assets/asset 22.png" alt=""></a>
-                            </div>
-                            <div class="footer4-box1">
-                                <a href=""><img src="assets/asset 23.png" alt=""></a>
-                            </div>
-                            <div class="footer4-box1">
-                                <a href=""><img src="assets/asset 24.png" alt=""></a>
-                            </div>
-                            <div class="footer4-box1">
-                                <a href=""><img src="assets/asset 25.png" alt=""></a>
-                            </div>
-                            <div class="footer4-box1">
-                                <a href=""><img src="assets/asset 26.png" alt=""></a>
-                            </div>
-                        </div>
+                <div class="col-lg-6 col-12">
+                    <div class="subscribe-form">
+                        <form action="" class="newsletter-inner">
+                            <input type="text" placeholder="Your email address" class="common-input" name="EMAIL">
+                            <button class="btn btn_hover">Subscribe</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom-bar">
+    </div>
+    <!-- newsletter section end -->
+
+    <!-- footer section start -->
+    <div class="footer">
+        <div class="footer-top">
             <div class="container">
-                <p>Copyright 2017 All Right Reserved
-                    <span class="bottom-link"> ITGEEKS</span>
-                </p>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-footer">
+                            <h2>About Us</h2>
+                            <p>Lorem ipsum dolor sit am consectetur adipisicing elit do eiusmod tempor incididunt ut
+                                labore dolore magna.</p>
+                            <ul class="social p-0">
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-facebook-f me-0"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-google-plus-g me-0"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-twitter me-0"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-vimeo-v me-0"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-pinterest-p me-0"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-footer f-link">
+                            <h2>Quick Links</h2>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <ul class="p-0">
+                                        <li><a href="#"><i class="fa fa-caret-right"></i>Home</a></li>
+                                        <li><a href="#"><i class="fa fa-caret-right"></i>About Us</a></li>
+                                        <li><a href="#"><i class="fa fa-caret-right"></i>Services</a></li>
+                                        <li><a href="#"><i class="fa fa-caret-right"></i>Our Cases</a></li>
+                                        <li><a href="#"><i class="fa fa-caret-right"></i>Other Links</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <ul class="p-0">
+                                        <li><a href="#"><i class="fa fa-caret-right"></i>Consuling</a></li>
+                                        <li><a href="#"><i class="fa fa-caret-right"></i>Finance</a></li>
+                                        <li><a href="#"><i class="fa fa-caret-right"></i>Testimonials</a></li>
+                                        <li><a href="#"><i class="fa fa-caret-right"></i>FAQ</a></li>
+                                        <li><a href="#"><i class="fa fa-caret-right"></i>Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-footer">
+                            <h2>Open Hours</h2>
+                            <p>Lorem ipsum dolor sit ame consectetur adipisicing elit do eiusmod tempor incididunt.</p>
+                            <ul class="time-sidual p-0">
+                                <li class="day">Monday - Friday <span>8.00-20.00</span></li>
+                                <li class="day">Saturday <span>9.00-18.30</span></li>
+                                <li class="day">Monday - Thusday <span>9.00-15.00</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-footer">
+                            <h2>Newsletter</h2>
+                            <p>subscribe to our newsletter to get allour news in your inbox.. Lorem ipsum dolor sit
+                                amet, consectetur adipisicing elit,</p>
+                            <form action="" class="newsletter-inner">
+                                <input type="text" placeholder="Email Address" class="common-input" name="email">
+                                <button class="button">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
-    <!------footer section end------->
-
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <div class="copyright-content">
+                            <p>© Copyright 2024 | All Rights Reserved by
+                                <a href="#">Mediplus</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer section end -->
 
 
     <!-- bootstrap js file -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/multi-animated-counter.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
 
     <!-- custom js file -->
     <script src="js/custom.js"></script>
 
     <script>
         $(document).ready(function () {
-            //responsive header
-            $('.mob_main_menu, .mob_sub_menu, .mob_peta_menu').hide()
+            $('.mob_main_menu, .mob_sub_menu').hide()
 
             $('.toggle_icon').click(function () {
                 $('.mob_main_menu').slideToggle()
+                $('.mob_main_menu').toggleClass('close')
                 $(this).find('i').toggleClass('fa-bars fa-times');
             })
-
-            $('.mob_main_menu li a').click(function () {
+            $('.mob_main_menu > li > a').click(function () {
                 $(this).next('.mob_sub_menu').slideToggle();
             })
 
-            $('.mob_sub_menu li a').click(function () {
-                $(this).next('.mob_peta_menu').slideToggle();
-            })
         });
         $(document).ready(function () {
             $("#testi").owlCarousel({
                 items: 3,
                 loop: true,
+                dots: true,
                 center: true,
-                margin: 15,
                 autoplay: true,
+                responsive: {
+                    320: {
+                        items: 1,
+                    },
+                    576: {
+                        items: 2,
+                    },
+                    1000: {
+                        items: 3,
+                    }
+                }
             })
         });
 
         $(document).ready(function () {
-            $("#pattern").owlCarousel({
+            $("#portfolio").owlCarousel({
                 items: 4,
                 loop: true,
-                dots: true,
-                dotsEach: true,
+                dots: false,
                 center: false,
                 margin: 15,
+                autoplay:true,
+                responsive: {
+                    320: {
+                        items: 1,
+                    },
+                    576: {
+                        items: 2,
+                    },
+                    1000: {
+                        items: 4,
+                    }
+                }
+            })
+        });
+
+        $(document).ready(function () {
+            $("#client").owlCarousel({
+                items: 5,
+                loop: true,
+                dots: false,
+                center: true,
+                responsive: {
+                    320: {
+                        items: 2,
+                    },
+                    576: {
+                        items: 3,
+                    },
+                    992: {
+                        items: 5,
+                    }
+                }
             })
         });
 
@@ -1004,11 +1303,9 @@
             $("#banner").owlCarousel({
                 items: 1,
                 loop: true,
-                dots: true,
-                nav: false,
-                autoplay: true,
-                autoplayTimeout: 2000,
-                autoplayHoverPause: true,
+                dots: false,
+                nav: true,
+                navText: ['<i class="fa-solid fa-angle-left"></i>', '<i class="fa-solid fa-angle-right"></i>']
             });
 
             new WOW().init();
@@ -1028,20 +1325,6 @@
 
                 if (h > 150) {
                     $('.header').addClass('fixed_header')
-                }
-                else {
-                    $('.header').removeClass('fixed_header')
-                }
-            })
-        })
-
-        $(document).ready(function () {
-            // scroll to header fixed code
-            $(window).scroll(function () {
-                var h = $(window).scrollTop()
-
-                if (h > 150) {
-                    $('.header').addClass('fixed_header')
                     $('.sticky_top').fadeIn(350)
                 }
                 else {
@@ -1050,7 +1333,6 @@
                 }
             })
         })
-
 
         $('.sticky_top').hide()
 
@@ -1061,34 +1343,14 @@
         })
 
         setTimeout(() => {
-            $('.preloader').slideUp(2000)
-        }, 3000);
+            $('.preloader').slideUp(1500)
+        }, 2500);
 
         $(document).ready(function () {
             new WOW().init();
         })
-
-
-        // init Isotope
-        var $grid = $('.grids').isotope({
-            // options
-        });
-
-
-        // filter items on button click
-        $('.filter-button-group').on('click', 'span', function () {
-            var filterValue = $(this).attr('data-filter');
-            $grid.isotope({ filter: filterValue });
-        });
-
-        $("a.group").attr('rel', 'gallery').fancybox({
-            'transitionIn': 'elastic',
-            'transitionOut': 'elastic',
-            'speedIn': 600,
-            'speedOut': 200,
-            'overlayShow': false
-        });
     </script>
+
 </body>
 
 </html>
